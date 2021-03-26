@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:stretchColumns="1"
+    tools:context=".MainActivity">
+
+    <TableRow >
+        <TextView
+            android:layout_span="2"
+            android:text="Quan ly nhan vien"
+            android:gravity="center"
+            android:background="#35B53A"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            />
+    </TableRow>
+
+        <TableRow
+            android:layout_marginTop="35dp">
+            <TextView
+                android:text="Mã NV:"
+                android:textColor="@color/black"
+                android:layout_marginRight="35dp"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/maNV"
+                android:paddingLeft="10dp"/>
+        </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:text="Ten NV:"
+            android:textColor="@color/black"
+            android:layout_marginRight="35dp"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/tenNV"
+            android:paddingLeft="10dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Gioi tinh :"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="left|center" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:textSize="20dp"
+            android:id="@+id/male"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nu"
+            android:textSize="20dp"
+            android:id="@+id/female"
+            android:layout_marginLeft="35dp"/>
+
+    </RadioGroup>
+   </TableRow >
+
+
+   <TableRow>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhap NV"
+        android:layout_column="1"
+        android:id="@+id/btn"
+        />
+   </TableRow>
+
+    <TableRow    android:layout_marginTop="10dp" >
+        <TextView
+            android:layout_span="2"
+            android:text="Danh sach nhan vien"
+            android:gravity="left"
+            android:background="#35B53A"
+            android:textColor="@color/white"
+            android:layout_marginRight="35dp"
+            android:textSize="20dp"
+
+
+            />
+    </TableRow>
+
+    <LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+</TableLayout>

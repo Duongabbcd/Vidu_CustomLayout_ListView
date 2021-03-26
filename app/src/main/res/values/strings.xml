@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Vidu_CustomLayout_ListView</string>
+
+    <string-array  name="auto" >
+        <item>Duong</item>
+        <item>Viet</item>
+        <item>Do Anh</item>
+        <item>Duy</item>
+        <item>Dat</item>
+        <item>Dao</item>
+
+    </string-array>
+</resources>
